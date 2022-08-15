@@ -1,6 +1,17 @@
 {
   "name": "@uxdx/monorepo",
-  "version": "1.0.0",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {},
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "lerna": "^5.4.2",
+    "typescript": "^4.7.4",
+    "ultra-runner": "^3.10.5"
+  },
+  "packageManager": "yarn@3.2.2"
 }
