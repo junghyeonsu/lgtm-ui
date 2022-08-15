@@ -1,15 +1,38 @@
 {
   "name": "@uxdx/monorepo",
-  "version": "0.0.0",
   "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
-  "scripts": {},
-  "main": "index.js",
   "license": "MIT",
+  "main": "index.js",
+  "workspaces": [
+    "packages/react/*"
+  ],
+  "scripts": {
+    "format": "eslint --fix --ext .js,.json,.ts,.tsx --ignore-path .gitignore .",
+    "lerna:publish": "yarn build && lerna publish"
+  },
   "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.3",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@typescript-eslint/eslint-plugin": "^5.33.0",
+    "@typescript-eslint/parser": "^5.33.0",
+    "eslint": "^8.22.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-react-app": "^7.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-json-format": "^2.0.1",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.30.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
     "lerna": "^5.4.2",
+    "prettier": "^2.7.1",
     "typescript": "^4.7.4",
     "ultra-runner": "^3.10.5"
   },
