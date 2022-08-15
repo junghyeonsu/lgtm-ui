@@ -1,5 +1,5 @@
 {
-  "name": "@uxdx/monorepo",
+  "name": "@lgtm/monorepo",
   "private": true,
   "license": "MIT",
   "main": "index.js",

@@ -1,1 +1,1 @@
-# alert
+# @lgtm/react-alert
