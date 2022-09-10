@@ -14,4 +14,5 @@
 lerna-debug.log
 .ultra.cache.json
 
-dist
+/dist
+/storybook-static

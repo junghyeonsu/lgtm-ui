@@ -7,6 +7,15 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
-    "skipLibCheck": false
-  }
+    "skipLibCheck": false,
+    "baseUrl": "./src",
+    "outDir": "./dist"
+  },
+  "exclude": ["./dist"],
+  "include": [
+    "src/**/*",
+    ".storybook/**/*",
+    ".eslintrc.js",
+    "esbuild.config.js"
+  ]
 }
