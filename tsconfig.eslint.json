@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "./src"
+  },
+  "include": [
+    "src/**/*",
+    ".storybook/**/*",
+    ".eslintrc.js",
+    "esbuild.config.js"
+  ]
+}

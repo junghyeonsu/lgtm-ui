@@ -1,0 +1,7 @@
+.yarn/*
+.pnp.cjs
+.pnp.loader.mjs
+
+!.storybook
+
+**/dist/**/*

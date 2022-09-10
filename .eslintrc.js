@@ -1,15 +1,15 @@
 module.exports = {
   root: true,
   parser: "@typescript-eslint/parser",
-  extends: ["react-app", "airbnb-typescript", "prettier"],
+  extends: ["react-app", "airbnb-typescript", "prettier", "plugin:storybook/recommended"],
   parserOptions: {
-    project: "./tsconfig.json",
+    project: "./tsconfig.eslint.json",
   },
   plugins: [
-    "json-format",
-    "simple-import-sort",
     "@typescript-eslint/eslint-plugin",
+    "json-format",
     "prettier",
+    "simple-import-sort",
   ],
   rules: {
     "import/no-extraneous-dependencies": "off",
@@ -25,9 +25,6 @@ module.exports = {
         trailingComma: "all",
         printWidth: 120,
         arrowParens: "always",
-      },
-      {
-        usePrettierrc: false,
       },
     ],
     "@typescript-eslint/consistent-type-imports": [

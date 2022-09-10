@@ -37,13 +37,14 @@
   "scripts": {
     "build": "ultra -r --build build:all",
     "build:all": "yarn build:package && yarn build:storybook",
+    "build:package:dts": "tsc --emitDeclarationOnly",
     "build:package:js": "node ./esbuild.config.js",
     "build:storybook": "build-storybook",
     "clean": "rimraf ./dist && rimraf ./node_modules && rimraf ./storybook-static",
     "dev": "ultra -r dev:all",
     "dev:all": "yarn build:package:js --watch && yarn build:package:dts --watch && yarn dev:storybook",
-    "format": "eslint --fix --ext .js,.json,.ts,.tsx --ignore-path .gitignore .",
-    "lerna:publish": "yarn build && lerna publish"
+    "dev:storybook": "start-storybook -p 3000",
+    "format": "eslint --fix --ext .js,.json,.ts,.tsx --ignore-path .gitignore ."
   },
   "devDependencies": {
     "@babel/core": "^7.18.10",
@@ -74,9 +75,11 @@
     "eslint-plugin-react": "^7.30.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
+    "eslint-plugin-storybook": "^0.6.4",
     "prettier": "^2.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "rimraf": "^3.0.2",
     "typescript": "^4.7.4",
     "ultra-runner": "^3.10.5"
   },
