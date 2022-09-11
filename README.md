@@ -7,6 +7,12 @@ $ yarn add lgtm-ui
 $ npm i lgtm-ui
 ```
 
+## Why LGTM
+
+- If I can use this, everyone else can use this too. (It looks good to me...)
+- Beautiful and Awesome
+- Support tree shaking
+
 ## Usage
 
 ```tsx
