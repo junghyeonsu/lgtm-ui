@@ -75,5 +75,5 @@ If you want to add components, Add `exports`, `typesVersions` fields in `package
 
 ### React
 
-- [Alert (WIP)](./src/react/alert/README.md)
-- [Checkbox (WIP)](./src/react/checkbox/README.md)
+- [Alert (WIP)](https://github.com/junghyeonsu/lgtm-ui/tree/main/src/react/alert)
+- [Checkbox (WIP)](https://github.com/junghyeonsu/lgtm-ui/tree/main/src/react/checkbox)
