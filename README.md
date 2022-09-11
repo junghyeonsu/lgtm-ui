@@ -38,11 +38,10 @@ $ yarn install
 $ yarn dev
 ```
 
+If you want to add components, Add `exports`, `typesVersions` fields in `package.json`
+
 ```json
-// If you want to add components, 
-// Add "exports", "typesVersions" fields in package.json
 {
-  // ...
   "exports": {
     ".": {
       "source": "./src/index.ts",
@@ -60,7 +59,6 @@ $ yarn dev
       "import": "./dist/react/checkbox/index.mjs"
     }
   },
-  // ...,
   "typesVersions": {
     "*": {
       "react/alert": [
